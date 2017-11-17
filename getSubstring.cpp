@@ -8,9 +8,9 @@ String getSubstring(String &string, int first, int last) {
 	for (int i = first; i < last; ++i) 
 		subData[i - first] = string.data[i];
 
-	String *result = new String;
-	result->data = subData;
-	result->size = newSize;
+	String result;
+	result.data = subData;
+	result.size = newSize;
 
-	return *result;
+	return result;
 }
