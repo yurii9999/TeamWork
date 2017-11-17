@@ -1,6 +1,6 @@
-#include "strign.h"
+#include "string.h"
 
-char* getCharArray(String *string)
+char* getCharArray(String &string)
 {
-    return string->data;
+    return string.data;
 }
