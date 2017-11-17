@@ -1,7 +1,7 @@
 #include "String.h"
 
 // [first, last)
-String* getSubstring(String &string, int first, int last) {
+String getSubstring(String &string, int first, int last) {
 	int newSize = last - first;
 	char* subData = new char[newSize];
 
@@ -12,5 +12,5 @@ String* getSubstring(String &string, int first, int last) {
 	result->data = subData;
 	result->size = newSize;
 
-	return result;
+	return *result;
 }
