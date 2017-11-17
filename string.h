@@ -14,9 +14,9 @@ void input(String &string);
 
 void output(String &string);
 
-void clone(String &string);
+String* clone(String &string);
 
-void cont(String &string);
+void cont(String &string, String &addition);
 
 String* getSubstring(String &string, int first, int last);
 
