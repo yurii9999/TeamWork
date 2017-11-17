@@ -1,11 +1,9 @@
 #pragma once
 
-const int firstSize = 20;
-
 struct String
 {
-    char *data = new char[firstSize];
-    int size = firstSize;
+    char *data;
+    int size = 0;
 };
 
 bool areEqual(String &string1, String &string2);
